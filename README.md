@@ -1,2 +1,7 @@
 # ansible-playbook
-aws용 유용한 스크립트 
+I'm making a useful script for aws.
+
+Information
+---
+* ec2
+* load-balancer
