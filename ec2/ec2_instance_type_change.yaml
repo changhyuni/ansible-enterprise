@@ -1,0 +1,22 @@
+---
+- hosts: 'localhost'
+  tasks:
+  - name: ec2 instance stop
+    ec2:
+      region: 'ap-northeast-2'
+      instance_ids:
+        - "{{ ec2_id }}"
+      wait: yes
+      state: stopped
+
+  - name: resize ec2 instance
+    shell: >
+      aws ec2 modify-instance-attribute --instance-id "{{ ec2_id }}"
+      --instance-type "{{ ec2_instance_type }}" --region 'ap-northeast-2'
+
+  - name: start EC2 instance.
+    ec2:
+      region: "ap-northeast-2"
+      instance_ids:
+        - "{{ ec2_id }}"
+      state: running
