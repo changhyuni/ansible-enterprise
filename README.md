@@ -1,5 +1,6 @@
 # ansible-playbook
-I'm making a useful script for aws.
+I'm making a useful script for aws. 
+Use 'extra variables' for variables.
 
 Information
 ---
