@@ -1,0 +1,9 @@
+{
+    "name": "goorm-app",
+    "description": "Example Express Node.js app.",
+    "author": "loanshark <bhs9610@naver.com>",
+    "dependencies": {
+      "express": "4.17.1"
+    },
+    "engine": "node >= 0.10.6"
+  }
