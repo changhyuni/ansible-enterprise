@@ -5,4 +5,5 @@ Use 'extra variables' for variables.
 Information
 ---
 * ec2
-* load-balancer
+* Install
+* 
