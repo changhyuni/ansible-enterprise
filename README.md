@@ -6,4 +6,4 @@ Information
 ---
 * ec2
 * Install
-* 
+* config
