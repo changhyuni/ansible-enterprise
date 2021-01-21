@@ -1,9 +1,8 @@
 ---
-- name: "Playbook to Create User and  Add Key to EC2 Instance"
-  hosts: hosts_to_add_key
+- name: "Create User and  Add Key to EC2 Instance"
+  hosts: all
   become: true
   tasks:
-  
   - name : "Create Groups"
     group:
       name: "{{item}}"
